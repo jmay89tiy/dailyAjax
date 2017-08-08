@@ -33,12 +33,11 @@ justify-content: center;
   text-align: center;
   flex-basis: 100%;
   font-family: 'Cinzel', serif;
-
 }
 
 
 
-.header::after { /*wierd gradient with jagged edges below made to match black header */
+.header::after { /*wierd gradient with jagged edges below made to match black header, replaced both colors with black/white to match background */
 
   content: " ";
   display:block;
@@ -91,5 +90,5 @@ ul a {
 
 .pictureAvatar img {
   border-radius: 60px;
-  width: 100px;
+  width: 100px; /* pic might be too small*/
 }
