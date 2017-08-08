@@ -1,0 +1,95 @@
+
+
+ body {
+background-color: white;
+ }
+
+ .wrapper {
+/* check */
+font-family: arial;
+color: gray;
+display: flex;
+width: 100%;
+flex-wrap: wrap;
+justify-content: center;
+ }
+
+ h1 {
+   font-size: 65px;
+   font-family: 'Josefin Slab', serif;
+   font-weight:lighter;
+ }
+
+ h3 {
+   font-size: 35px;
+   color: black;
+   font-family: 'Source Serif Pro', serif;
+ }
+
+
+.header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  flex-basis: 100%;
+  font-family: 'Cinzel', serif;
+
+}
+
+
+
+.header::after { /*wierd gradient with jagged edges below made to match black header */
+
+  content: " ";
+  display:block;
+  position: relative;
+  top:0px;left:0px;
+  width:100%;
+  height:36px;
+  background: linear-gradient(black 0%, transparent 0%), linear-gradient(135deg, white 33.33%, transparent 33.33%) 0 0%, white linear-gradient(45deg, white 33.33%, black 33.33%) 0 0%;
+  background: -webkit-linear-gradient(black 0%, transparent 0%), -webkit-linear-gradient(135deg, white 33.33%, transparent 33.33%) 0 0%, white -webkit-linear-gradient(45deg, white 33.33%, black 33.33%) 0 0%;
+  background: -o-linear-gradient(black 0%, transparent 0%), -o-linear-gradient(135deg, white 33.33%, transparent 33.33%) 0 0%, white -o-linear-gradient(45deg, white 33.33%, black 33.33%) 0 0%;
+  background: -moz-linear-gradient(black 0%, transparent 0%), -moz-linear-gradient(135deg, white 33.33%, transparent 33.33%) 0 0%, white -moz-linear-gradient(45deg, white 33.33%, black 33.33%) 0 0%;
+  background-repeat: repeat-x;
+  background-size: 0px 100%, 9px 27px, 9px 27px;
+}
+
+
+.theBasics {
+  color: rgb(128, 128, 128);
+  width: 30%;
+}
+
+ul { /* to restructure default ul settings */
+  line-height: 20px;
+  border-right: 3px solid gray;
+  list-style: none;
+  padding-right: 50px;
+  padding-left: 0px;
+
+}
+
+ul span { /* colors of the cats */
+  color: teal;
+}
+
+ul a {
+  color: black;
+}
+
+.theStory {
+  flex-basis: 30%;
+  padding-left: 20px;
+  word-wrap:break-word;
+}
+
+.pictureAvatar {
+  margin-left: 48px;
+  padding-top: 100px;
+
+}
+
+.pictureAvatar img {
+  border-radius: 60px;
+  width: 100px;
+}
